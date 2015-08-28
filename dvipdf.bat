@@ -21,15 +21,9 @@ if "%~n1"=="" (
   exit /B
 )
 
-if "%~n1"=="-o" (
-  set outfile=%~n2.pdf
-  shift
-  shift
-)
-
-if "%~n1"=="" exit /B
 set infile=%~n1.dvi
-if "%outfile%"=="" set outfile=%~n1.pdf
+set outfile=%~n2.pdf
+if "%outfile%"==".pdf" set outfile=%~n1.pdf
 
 rem We have to include the options twice because -I only takes effect if it
 rem appears before other options.
