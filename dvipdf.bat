@@ -27,4 +27,4 @@ if "%outfile%"==".pdf" set outfile=%~n1.pdf
 
 rem We have to include the options twice because -I only takes effect if it
 rem appears before other options.
-%DVIPS% -Ppdf %DVIPSOPTIONS% -f "%infile%" | %GS_EXECUTABLE% %OPTIONS% -P- -dSAFER -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sstdout=%%stderr -sOutputFile="%outfile%" %OPTIONS% -c .setpdfwrite -
+%DVIPS% -Ppdf %DVIPSOPTIONS% -f "%infile%" | %GS_EXECUTABLE% %OPTIONS% -P- -dSAFER -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sOutputFile="%outfile%" %OPTIONS% -c .setpdfwrite -
