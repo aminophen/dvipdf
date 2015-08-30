@@ -2,9 +2,15 @@
 rem Convert DVI to PDF, using dvips and ghostscript.
 rem Based on ps2pdf
 
+rem Note: this batch file "dvipdf.bat" is written by Hironobu YAMASHITA,
+rem       inspired by "dvipdf" shell script in GPL Ghostscript distribution
+
 setlocal enabledelayedexpansion
-set DVIPS="C:\w32tex\bin\dvips.exe"
-set GS_EXECUTABLE="C:\Program Files (x86)\gs\gs9.10\bin\gswin32c.exe"
+
+rem Following definitions should be changed on install to match the
+rem executable name suitable for your environment
+set DVIPS=dvips.exe
+set GS_EXECUTABLE=gswin32c.exe
 
 for %%f in (%*) do (
   set TEMPARG=%%~f
