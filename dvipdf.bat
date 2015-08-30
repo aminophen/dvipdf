@@ -26,7 +26,7 @@ for %%f in (%*) do (
 )
 
 if "%~n1"=="" (
-  echo Usage: %~n0 [options...] input.dvi [output.pdf] 1>&2
+  echo Usage: dvipdf [options...] input.dvi [output.pdf] 1>&2
   exit /B
 )
 
