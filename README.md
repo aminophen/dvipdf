@@ -16,11 +16,11 @@ dvipdf.bat は、このシェルスクリプトと同じことを行う Windows 
 
 ### インストールと設定
 
-基本的に Windows のコマンドライン（主にコマンド プロンプト）から呼び出すことを想定しています。
+基本的に Windows のコマンド プロンプトから呼び出すことを想定しています。
 dvipdf.bat をパスの通ったディレクトリに置けば，インストールは完了です。
 
 TeX Live や W32TeX での利用を想定し、Ghostscript の実行ファイル名に rungs.exe を仮定しています。
-もし standalond の Ghostscript を直接呼び出したい場合は
+もし standalone の Ghostscript を直接呼び出したい場合は
 
     set GS_EXECUTABLE=rungs.exe
 
@@ -30,9 +30,7 @@ TeX Live や W32TeX での利用を想定し、Ghostscript の実行ファイル
 
 コマンドラインから
 
-~~~~
-$ dvipdf [options...] input.dvi [output.pdf]
-~~~~
+    $ dvipdf [options...] input.dvi [output.pdf]
 
 という形式で実行します。
 オプションの扱いは Ghostscript の dvipdf シェルスクリプトと同じです。
