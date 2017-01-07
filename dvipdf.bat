@@ -10,7 +10,7 @@ setlocal enabledelayedexpansion
 rem Following definitions should be changed on install to match the
 rem executable name suitable for your environment
 set DVIPS=dvips.exe
-set GS_EXECUTABLE=gswin32c.exe
+set GS_EXECUTABLE=rungs.exe
 
 for %%f in (%*) do (
   set TEMPARG=%%~f
